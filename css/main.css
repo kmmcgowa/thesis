@@ -7,8 +7,8 @@
 body{
   font-family: 'Fauna One', serif;
   font-size: 18pt;
-  background-color: #009688;
-  color : #fff;
+  background-color: #ffffff;
+  color : #000;
 }
 h1{
   font-family: 'Playfair Display', serif;
@@ -38,29 +38,30 @@ h1#title{
   font-size: 2.5em;
   margin-left: 25%;
   padding-bottom: 2%;
-  color: #000;
 }
 header p{
   margin-left: 25%;
   width: 50%;
   text-align: justify;
+  color: #fff;
 }
 #container{
   width: 90vw;
   margin: auto;
 }
-#playground, #resutls{
-  display: block;
-  float: left;
+#playground, #results{
+  width: 50%;
+  display: inline-block;
 }
 canvas{
-  width: 640px;
+  width: 90%;
   margin: auto;
-  padding-top: 5%;
+  padding-left: 5%;
   padding-right: 5%;
 }
 #results{
   padding-left: 5%;
+  width: 40%;
 }
 #results h1{
   line-height: 2em;
