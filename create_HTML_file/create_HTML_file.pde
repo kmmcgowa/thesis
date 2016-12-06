@@ -4,6 +4,8 @@ import java.io.BufferedWriter;
 FileWriter fWriter = null;
 BufferedWriter writer = null;
 try {
+      // need to write filepath
+      // currently outputs to computer/users/kevin_mcgowan/
     fWriter = new FileWriter("fileName.html");
     writer = new BufferedWriter(fWriter);
     writer.write("<span>This iss your html content here</span>");

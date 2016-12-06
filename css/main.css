@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display:400,400i,700');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Fauna One', serif;
+  font-size: 18pt;
+  background-color: #009688;
+  color : #fff;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+
+}
+video{
+  display: none;
+}
+#top{
+  position: relative;
+}
+#toggle{
+  cursor: pointer;
+  background-color: #FF5252;
+  width: 100vw;
+  padding: 5px;
+}
+#controls{
+  background-color: #FF5252;
+}
+header{
+  background-color: #FF5252;
+  position: relative;
+  padding-bottom: 2%;
+}
+h1#title{
+  font-size: 2.5em;
+  margin-left: 25%;
+  padding-bottom: 2%;
+  color: #000;
+}
+header p{
+  margin-left: 25%;
+  width: 50%;
+  text-align: justify;
+}
+#container{
+  width: 90vw;
+  margin: auto;
+}
+#playground, #resutls{
+  display: block;
+  float: left;
+}
+canvas{
+  width: 640px;
+  margin: auto;
+  padding-top: 5%;
+  padding-right: 5%;
+}
+#results{
+  padding-left: 5%;
+}
+#results h1{
+  line-height: 2em;
+}
+#results p, #results i{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

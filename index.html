@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <title>Tangible Code</title>
+    <base target="_blank">
+  </head>
+  <body>
+    <div id="top">
+      <i id="toggle" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      <div id="controls">
+        <div class="select">
+          <label for="audioSource">Audio input source: </label><select id="audioSource"></select>
+        </div>
+        <div class="select">
+          <label for="audioOutput">Audio output destination: </label><select id="audioOutput"></select>
+        </div>
+        <div class="select">
+          <label for="videoSource">Video source: </label><select id="videoSource"></select>
+        </div>
+        <button id="videoShow">Toggle Video tag</button>
+      </div>
+    </div>
+    <header>
+      <h1 id="title">Tangible Code</h1>
+      <p>Tangible code is an interactive installation design to teach the basics of web programming in a physical environment. The example is built with exerpts from Dr. Suess's short stories.</p>
+    </header>
+    <div id="container">
+      <div id="playground">
+        <video id="video" autoplay></video>
+        <canvas id='c'></canvas>
+      </div>
+      <div id="results">
+        <h1 id="h1">YERTLE THE TURTLE</h1>
+        <p id="p1">I’m Yertle the Turtle!<br>Oh, marvelous me!<br>For I am the ruler<br>of all that I see!</p>
+        <i id="italics">You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.</i>
+        <p id="p2">Your Majesty. Please…<br>I don’t like to complain.<br>But down here below,<br>we are feeling great pain.</p>
+      </div>
+    </div>
+
+    <script src="js/json.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/canvas.js"></script>
+    <script>
+      $(function(){
+        $('#controls').hide();
+        $('#toggle').click(function(){
+          $('#controls').slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
